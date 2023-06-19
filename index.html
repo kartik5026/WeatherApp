@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Weather App</h1>
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-md-6">
+                <form action="/checkWeather" method="post">
+                    <div class="form-group">
+                        <label for="cityInput">Enter City</label>
+                        <input type="text" class="form-control" name ="city" id="cityInput" placeholder="Enter city name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Weather</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card" id="weatherCard" style="display: none;">
+                    <div class="card-body">
+                        <h5 class="card-titlse" id="cityName"></h5>
+                        <p class="card-text" id="weatherDescription"></p>
+                        <p class="card-text" id="temperature"></p>
+                        <p class="card-text" id="humidity"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript code -->
+
+</body>
+
+</html>
